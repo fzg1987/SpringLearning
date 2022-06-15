@@ -6,8 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringLearning" />
+        <module name="AOPDemo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AopDemoApplication" target="1.8" />
+      <module name="SpringLearning" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AOPDemo" options="-parameters" />
+      <module name="AopDemoApplication" options="-parameters" />
+      <module name="SpringLearning" options="-parameters" />
+    </option>
   </component>
 </project>
